@@ -52,8 +52,8 @@ io.on('connection',function(socket){
         socket.broadcast.emit('Server-send-data',listClient);
     })
 
-    socket.on('Client-send-message',function(data){
-        io.sockets.emit('Server-send-message',{user: socket.userName, text: data})
+    socket.on('Client-send-messageAll',function(data){
+        io.sockets.emit('Server-send-messageAll',{user: socket.userName, text: data})
     })
 })
 

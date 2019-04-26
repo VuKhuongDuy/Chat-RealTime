@@ -1,6 +1,6 @@
 #login{
     width: 400px;
-    height: 400px;
+    height: 100px;
     margin-left: 400px;
     background-color: cadetblue;
 }
@@ -14,29 +14,8 @@
     font-weight: bold;
 }
 
-#wrapper-user{
-    width: 100%;
-    height: 350px;
-}
-
-.user-lbl{
-    width: 20%;
-    float: left;
-    height: 70px;
-}
-
-.user-input{
-    width: 78%;
-    height: 70px;
-    margin-left: 60px;
-}
-
-.input{
-    width: 80%;
-}
-
-#txtAccount{
-    float: left;
+#txtUser{
+    margin-left: 100px;
 }
 
 #wrapper{
@@ -67,25 +46,19 @@
 #listOnline-header{
     width: 100%;
     height: 50px;
+    line-height: 53px;
     border-right: 1px solid white;
     background-color: darkcyan;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 #listOnline-body{
     width: 100%;
     height: 95%;
-    color: green;
+    color: black;
     font-size: 20px;
-    padding-left: 7px;
     display: block;
-}
-
-#listOnline-body table tr {
-    width: 100%;
-}
-
-#listOnline-body table tr td{
-    width: 100%;
 }
 
 #wrapper-user{
@@ -98,7 +71,7 @@
     font-size: 30px;
     font-weight: bold;
     color: white;
-    margin-left: 420px;
+    margin-left: 30px;
     margin-top: 10px;
     float: left;
 }
@@ -113,9 +86,26 @@
     height: 90%;
 }
 
+.object{
+    width: 100px;
+    height: 20px;
+    font-size: 20px;
+    text-align: center;
+    float: left;
+}
+
+#all{
+    background-color: aqua;
+}
+
+.user{
+    width: 100%;
+    height: 25px;
+}
+
 #table-message{
     width: 100%;
-    height: 95%;
+    height: 94%;
     background-color: whitesmoke;
     overflow: auto;
 }

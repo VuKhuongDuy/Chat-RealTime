@@ -11,45 +11,14 @@
     <script src="https://messagevd.herokuapp.com/socket.io/socket.io.js"></script>
     <script>
         var socket = io("http://localhost:3000");
-
-        // socket.on('Server-send-data',function(data){
-        //     $("#noidung").append(data+"   :");
-        // })
-
-        // $(document).ready(function(){
-        //     $("#mrA").click(function(){
-        //         socket.emit("Client-send-data","HELLO");
-        //     });
-        // });
     </script>
 </head>
 
 <body>
     <div id="login">
-        <div id="title">Đăng nhập</div>
-        <div id="wrapper-user">
-            <div class="user-lbl">
-                <div id="lbl-account">Tài khoản</div>
-                <div id="lbl-password">Mật khẩu</div>
-            </div>
-            <div class="user-input">
-                <input type="text" id="txtAccount" class="input"/>
-                <input type="password" id="txtPassword" class="input"/>
-            </div>
-        </div>
-        <input type="button" id="btnDangNhap" value="Đăng nhập"/>
-        <div id="title-logup">Đăng kí</div>
-        <div id="wrapper-logup">
-            <div class="user-lbl">
-                <div id="lbl-accountNew">Tài khoản</div>
-                <div id="lbl-passwordNew">Mật khẩu</div>
-            </div>
-            <div class="user-input">
-                <input type="text" id="txtAccountNew" class="input"/>
-                <input type="password" id="txtPasswordNew" class="input"/>
-            </div>
-        </div>        
-        <input type="button" id="btnDangKi" value="Đăng kí"/>
+        <div id="title">Tạo tên</div>
+        <input type="text" id="txtUser" placeholder="Tên của bạn"/>
+        <input type="button" id="btnGo" value="Vào"/>
     </div>
     <div id="wrapper">
         <div id="wrapper-left">
@@ -63,6 +32,10 @@
             <div id="wrapper-user">
                 <div id="user-name"></div>
                 <input type="button" id="btnLogout" value="Logout" />
+            </div>
+            <div id="wrapper objectChat">
+                <div id="all" class="object">Mọi người</div>
+                <div id="friend" class="object">Cá nhân</div>
             </div>
             <div id="wrapper-message">
                 <div id="table-message"></div>
