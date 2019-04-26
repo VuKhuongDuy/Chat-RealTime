@@ -1,4 +1,4 @@
-var socket = io("http://localhost:3000");
+var socket = io("https://messagevd.herokuapp.com/");
 
 $("#btnDangNhap").click(function(){
     socket.emit('Client-send-login',$("#txtAccount").val())
