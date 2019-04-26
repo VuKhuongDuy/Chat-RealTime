@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="./css/style.css" rel="stylesheet">
+    <script src="jquery.js"></script>
+    <script src="socket.io/socket.io.js"></script>
+    <script>
+        var socket = io("http://localhost:3000");
+
+        // socket.on('Server-send-data',function(data){
+        //     $("#noidung").append(data+"   :");
+        // })
+
+        // $(document).ready(function(){
+        //     $("#mrA").click(function(){
+        //         socket.emit("Client-send-data","HELLO");
+        //     });
+        // });
+    </script>
+</head>
+
+<body>
+    <div id="login">
+        <div id="title">Đăng nhập</div>
+        <div id="wrapper-user">
+            <div class="user-lbl">
+                <div id="lbl-account">Tài khoản</div>
+                <div id="lbl-password">Mật khẩu</div>
+            </div>
+            <div class="user-input">
+                <input type="text" id="txtAccount" class="input"/>
+                <input type="password" id="txtPassword" class="input"/>
+            </div>
+        </div>
+        <input type="button" id="btnDangNhap" value="Đăng nhập"/>
+        <div id="title-logup">Đăng kí</div>
+        <div id="wrapper-logup">
+            <div class="user-lbl">
+                <div id="lbl-accountNew">Tài khoản</div>
+                <div id="lbl-passwordNew">Mật khẩu</div>
+            </div>
+            <div class="user-input">
+                <input type="text" id="txtAccountNew" class="input"/>
+                <input type="password" id="txtPasswordNew" class="input"/>
+            </div>
+        </div>        
+        <input type="button" id="btnDangKi" value="Đăng kí"/>
+    </div>
+    <div id="wrapper">
+        <div id="wrapper-left">
+            <div id="wrapper-listOnline">
+                <div id="listOnline-header">Người online</div>
+                <div id="listOnline-body">
+                </div>
+            </div>
+        </div>
+        <div id="wrapper-right">
+            <div id="wrapper-user">
+                <div id="user-name"></div>
+                <input type="button" id="btnLogout" value="Logout" />
+            </div>
+            <div id="wrapper-message">
+                <div id="table-message"></div>
+                <div id="message">
+                    <input type="text" id="text-message" placeholder="text"/>
+                    <input type="button" id="btnSend" value="send"/>
+                    <!-- <input type="text" id="to-user" placeholder="to"/> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="javascript/xuli.js"></script>
+</html>
